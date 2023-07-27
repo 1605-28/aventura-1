@@ -1,0 +1,124 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background: linear-gradient(45deg, #ffb3ba, #ffffff);
+}
+
+.conteiner {
+  height: 100vh;
+  width: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.calculator {
+  position: relative;
+  height: auto;
+  width: auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 30px rgb(187, 130, 130);
+  background-color: white;
+  /*dark theme*/
+}
+.calculator #display {
+  color: #0a1e23;
+  margin: 0 10px;
+  height: 120px;
+  width: auto;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-weight: 800;
+}
+.calculator #equal {
+  height: 130px;
+}
+.calculator #clear {
+  background-color: #ae0001;
+  color: black;
+}
+.calculator .btn-number {
+  background-color: #c9c9ff;
+  color: black;
+}
+.calculator .btn-operator {
+  background-color: #ff7b7b;
+  color: #ae0001;
+}
+.calculator .btn-equal {
+  background-color: #3bd6c6;
+  color: black;
+}
+.calculator.dark {
+  background-color: black;
+}
+.calculator.dark #display {
+  color: #ffffff;
+}
+.calculator.dark #clear {
+  background-color: violet;
+  color: #ffffff;
+}
+.calculator.dark .btn-number {
+  background-color: green;
+  color: black;
+  font-weight: 600;
+}
+.calculator.dark .btn-operator {
+  background-color: yellow;
+  color: rosybrown;
+}
+.calculator.dark .btn-equal {
+  background-color: orangered;
+  color: #ffffff;
+}
+
+.theme-toggler {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  color: #ffffff;
+  cursor: pointer;
+  z-index: 1;
+}
+.theme-toggler::before {
+  content: "";
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #0a1e23;
+  z-index: -1;
+}
+
+.theme-toggler .active {
+  color: #0a1e23;
+}
+.theme-toggler .active::before {
+  background-color: #ffffff;
+}
+
+button {
+  height: 60px;
+  width: 60px;
+  border: 0;
+  border-radius: 50px;
+  margin: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+button:hover {
+  transform: scale(1.1);
+}/*# sourceMappingURL=style.css.map */
